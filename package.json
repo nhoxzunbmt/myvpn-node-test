@@ -1,0 +1,14 @@
+{
+  "name": "myvpn-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com-wireguard-tools:Myte-Digi/myvpn-node.git",
+  "author": "Loi Tran <loi@anantadigi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.23.0",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "ip": "^1.1.5"
+  }
+}
