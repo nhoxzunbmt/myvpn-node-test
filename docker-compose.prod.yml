@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  myvpn-node:
+    container_name: myvpn-node-prod
+    command: yarn start

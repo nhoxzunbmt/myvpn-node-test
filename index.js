@@ -2,7 +2,7 @@ var CronJob = require('cron').CronJob;
 var ping = require('./lib/ping')
 //https://crontab.guru/
 var job = new CronJob(
-	'* * * * * *',
+	'*/2 * * * *',
 	function() {
         var utc = new Date();
 
@@ -21,7 +21,7 @@ var job = new CronJob(
 
 const express = require('express')
 const app = express()
-const port = 9000
+const port = 3000
 
 app.get('/', (req, res) => {
   res.send('Hello World!')

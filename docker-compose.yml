@@ -1,0 +1,15 @@
+version: '3'
+#https://github.com/hagopj13/node-express-boilerplate/
+services:
+  myvpn-node:
+    build: .
+    image: myvpn-node
+    ports:
+      - '9000:3000'
+    volumes:
+      - .:/usr/src/myvpn-node
+    networks:
+      - myvpn-node-network
+networks:
+  myvpn-node-network:
+    driver: bridge
