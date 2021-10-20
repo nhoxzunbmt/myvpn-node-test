@@ -23,4 +23,12 @@ docker images
 docker run -d -p 9000:3000 nhoxzunbmt/myvpn-node:v1.1
 
 
-docker run -d --name db -p 9000:3000 nhoxzunbmt/myvpn-node:v1.0.0
+docker run -d -p 9000:3000 nhoxzunbmt/myvpn-node:latest
+
+
+#In PI 
+
+docker build --tag myvpn-node .
+docker tag myvpn-node:latest nhoxzunbmt/myvpn-node:latest
+docker push nhoxzunbmt/myvpn-node:latest
+docker push nhoxzunbmt/myvpn-node:latest
