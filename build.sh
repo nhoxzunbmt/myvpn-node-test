@@ -1,3 +1,3 @@
 docker build --tag myvpn-node .
-docker tag myvpn-node:latest nhoxzunbmt/myvpn-node:latest
-docker push nhoxzunbmt/myvpn-node:latest
+docker tag myvpn-node:latest loiincloud/myvpn-node:latest
+docker push loiincloud/myvpn-node:latest
